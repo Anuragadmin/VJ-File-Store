@@ -22,7 +22,7 @@ API_ID = int(environ.get("API_ID", "27671996"))
 API_HASH = environ.get("API_HASH", "338ee26897ad7adbc974ceed1a291986")
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
-PICS = (environ.get('PICS', '')).split() # Bot Start Picture
+PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7332251114').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "HindiFlix_Dramabot") # without @
 PORT = environ.get("PORT", "8080")
@@ -36,7 +36,7 @@ CDB_NAME = environ.get("CDB_NAME", "clonetechvj")
 
 # Database Information
 DB_URI = environ.get("DB_URI", "mongodb+srv://HindiFlixbot: HindiFlixbot@hindiflixbot.ract8.mongodb.net/?retryWrites=true&w=majority&appName=HindiFlixbot")
-DB_NAME = environ.get("DB_NAME", "HindiFlixbot")
+DB_NAME = environ.get("DB_NAME", "techvjbotz")
 
 # Auto Delete Information
 AUTO_DELETE_MODE = bool(environ.get('AUTO_DELETE_MODE', True)) # Set True or False

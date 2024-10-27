@@ -22,7 +22,7 @@ API_ID = int(environ.get("API_ID", "27671996"))
 API_HASH = environ.get("API_HASH", "338ee26897ad7adbc974ceed1a291986")
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
-PICS = (environ.get('PICS', 'https://drive.google.com/file/d/1OhDWFF8NrSftvPGzNjswbYqh_YJkByEX/view?usp=drivesdk')).split() # Bot Start Picture
+PICS = (environ.get('PICS', '')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7332251114').split()]
 BOT_USERNAME = environ.get("BOT_USERNAME", "HindiFlix_Dramabot") # without @
 PORT = environ.get("PORT", "8080")
